@@ -1,0 +1,6 @@
+<?php /**@var \Mastering\SampleModule\Block\Post $block */ ?>
+
+<h3 style="color: red; "><?= $block->getLabel(); ?></h3>
+<?php foreach ($block->getItems() as $item) : ?>
+    <p><?= $item->getName(); ?> : <?= $item->getDescription(); ?> </p>
+<?php endforeach; ?>
